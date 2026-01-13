@@ -1,0 +1,8 @@
+{
+    "flange_diameter": 70.0,
+    "flange_thickness": 10.0,
+    "hole_count": 4,
+    "hole_diameter": 8.0,
+    "center_hole_diameter": 15.0,
+    "bolt_circle_percentage": 0.6
+}

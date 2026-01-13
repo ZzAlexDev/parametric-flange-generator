@@ -19,13 +19,16 @@ This repository was created as a learning project to demonstrate proficiency wit
 
 ```markdown
 parametric-flange-generator/
-├── generator.py          # Main generation script
-├── requirements.txt      # Python dependencies
-├── READme.md            # This file
-└── examples/            # Generated example files
-    ├── flange_default.step      # Example models
-    ├── flange_custom.step        # Example models
-    └── parameters.json          # Example configuration
+├── generator.py              # Main generator module
+├── requirements.txt          # Python dependencies
+├── README.md                 # This documentation
+├── .gitignore               # Git exclusion rules
+├── examples/                 # Example outputs
+│   ├── parameters.json      # Sample configuration
+│   ├── flange_default.step  # Default model
+│   ├── flange_custom.step   # Custom model
+│   └── dataset/             # Generated dataset
+└── tests/                   # Unit tests (optional)
 ```
 
 ## 🚀 Quick Start
