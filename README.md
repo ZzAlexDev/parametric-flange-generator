@@ -19,16 +19,39 @@ This repository was created as a learning project to demonstrate proficiency wit
 
 ```markdown
 parametric-flange-generator/
-├── generator.py              # Main generator module
-├── requirements.txt          # Python dependencies
-├── README.md                 # This documentation
-├── .gitignore               # Git exclusion rules
-├── examples/                 # Example outputs
-│   ├── parameters.json      # Sample configuration
-│   ├── flange_default.step  # Default model
-│   ├── flange_custom.step   # Custom model
-│   └── dataset/             # Generated dataset
-└── tests/                   # Unit tests (optional)
+│
+├── .gitignore              # Specifies files and directories to exclude from version control
+├── README.md               # Primary project documentation and user guide
+├── requirements.txt        # Python package dependencies (PINNED VERSION - COMMIT THIS)
+├── LICENSE                 # Software license (e.g., MIT, Apache 2.0) - RECOMMENDED
+│
+├── generator.py            # CORE MODULE: Parametric model generator and FlangeParams class
+├── run_in_cq_editor.py     # ENTRY POINT: Script for model visualization in CQ-editor GUI
+├── generate_dataset.py     # CLI TOOL: Command-line interface for batch dataset generation
+│
+├── examples/               # Example configurations and output demonstrations
+│   ├── .gitkeep            # Keeps this directory in Git (empty placeholder)
+│   ├── parameters.json     # Example parameter sets for different flange variants
+│   └── basic_usage.ipynb   # (FUTURE) Jupyter notebook with interactive examples
+│
+├── tests/                  # Unit and integration tests
+│   ├── .gitkeep            # Keeps this directory in Git
+│   ├── test_generator.py   # Tests for the core generator module
+│   └── test_parameters.py  # Tests for parameter validation and dataclasses
+│
+├── docs/                   # Project documentation
+│   ├── .gitkeep            # Keeps this directory in Git
+│   ├── api.md              # API reference for all public functions and classes
+│   └── development.md      # Guidelines for contributors and developers
+│
+├── scripts/                # Utility and maintenance scripts (OPTIONAL)
+│   ├── .gitkeep            # Keeps this directory in Git
+│   ├── benchmark.py        # Performance testing and profiling
+│   └── cleanup.py          # Utility for removing generated files
+│
+├── output/                 # GENERATED - Default directory for single model exports (IGNORED BY GIT)
+├── ai_dataset_*/           # GENERATED - Timestamped directories for datasets (IGNORED BY GIT)
+└── .venv/                  # GENERATED - Python virtual environment (IGNORED BY GIT)
 ```
 
 ## 🚀 Quick Start
