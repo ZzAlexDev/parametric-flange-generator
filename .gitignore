@@ -246,6 +246,26 @@ Desktop.ini
 # Linux
 *~
 
+# ============================================
+# PROJECT-SPECIFIC: GENERATED CAD FILES
+# ============================================
+
+# Generated 3D CAD files - NEVER COMMIT
+*.step
+*.stl
+*.iges
+*.igs
+
+# Generated dataset directories
+examples/dataset/*.step
+test_dataset/
+ai_dataset_*/
+
+# Keep only structure and configs
+!examples/dataset/.gitkeep
+!**/.gitkeep
+
+
 # ------------------------------------------------------------------------------
 # NOTES FOR PROJECT MAINTAINERS:
 # ------------------------------------------------------------------------------

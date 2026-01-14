@@ -1,1 +1,0 @@
-python -c "from generator import generate_flange; m = generate_flange(); print('✓ Basic generation works')"

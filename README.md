@@ -20,38 +20,40 @@ This repository was created as a learning project to demonstrate proficiency wit
 ```markdown
 parametric-flange-generator/
 │
-├── .gitignore              # Specifies files and directories to exclude from version control
+├── .gitignore              # Git exclusion rules for Python and CAD projects
 ├── README.md               # Primary project documentation and user guide
-├── requirements.txt        # Python package dependencies (PINNED VERSION - COMMIT THIS)
-├── LICENSE                 # Software license (e.g., MIT, Apache 2.0) - RECOMMENDED
+├── requirements.txt        # Python package dependencies (cadquery>=2.4)
 │
-├── generator.py            # CORE MODULE: Parametric model generator and FlangeParams class
-├── run_in_cq_editor.py     # ENTRY POINT: Script for model visualization in CQ-editor GUI
-├── generate_dataset.py     # CLI TOOL: Command-line interface for batch dataset generation
+├── generator.py            # CORE: Main parametric model generator module
+├── run_in_cq_editor.py     # Interface for visualization in CQ-editor
+├── generate_dataset.py     # CLI tool for dataset generation
 │
-├── examples/               # Example configurations and output demonstrations
-│   ├── .gitkeep            # Keeps this directory in Git (empty placeholder)
-│   ├── parameters.json     # Example parameter sets for different flange variants
-│   └── basic_usage.ipynb   # (FUTURE) Jupyter notebook with interactive examples
+├── examples/               # Example configurations and demonstrations
+│   ├── .gitkeep           # Preserves directory in Git (empty placeholder)
+│   ├── parameters.json    # Example parameter sets for various flange types
+│   └── dataset/           # Directory for example outputs (ignored by Git)
+│       └── .gitkeep       # Maintains directory structure
 │
-├── tests/                  # Unit and integration tests
-│   ├── .gitkeep            # Keeps this directory in Git
-│   ├── test_generator.py   # Tests for the core generator module
-│   └── test_parameters.py  # Tests for parameter validation and dataclasses
+├── tests/                  # Test suite for quality assurance
+│   ├── .gitkeep           # Preserves directory in Git
+│   └── test_generator.py  # Unit tests for core functionality
 │
 ├── docs/                   # Project documentation
-│   ├── .gitkeep            # Keeps this directory in Git
-│   ├── api.md              # API reference for all public functions and classes
-│   └── development.md      # Guidelines for contributors and developers
+│   └── .gitkeep           # Preserves directory in Git (for future docs)
 │
-├── scripts/                # Utility and maintenance scripts (OPTIONAL)
-│   ├── .gitkeep            # Keeps this directory in Git
-│   ├── benchmark.py        # Performance testing and profiling
-│   └── cleanup.py          # Utility for removing generated files
+├── scripts/                # Utility and helper scripts
+│   ├── .gitkeep           # Preserves directory in Git
+│   └── parameters_json_gen.py # Utility for generating JSON parameter files
 │
-├── output/                 # GENERATED - Default directory for single model exports (IGNORED BY GIT)
-├── ai_dataset_*/           # GENERATED - Timestamped directories for datasets (IGNORED BY GIT)
-└── .venv/                  # GENERATED - Python virtual environment (IGNORED BY GIT)
+├── output/                 # Default output directory for single models
+│   └── .gitkeep           # Maintains directory structure (ignored by Git)
+│
+├── ai_dataset/            # Directory for AI/ML training datasets
+│   └── .gitkeep           # Maintains directory structure (ignored by Git)
+│
+├── .git/                  # Git system directory (version control metadata)
+├── __pycache__/           # Python bytecode cache (ignored by Git)
+└── .venv/                 # Python virtual environment (ignored by Git)
 ```
 
 ## 🚀 Quick Start
