@@ -1,8 +1,32 @@
 {
-    "flange_diameter": 70.0,
-    "flange_thickness": 10.0,
+  "small_4hole": {
+    "flange_diameter": 40.0,
+    "flange_thickness": 8.0,
     "hole_count": 4,
-    "hole_diameter": 8.0,
-    "center_hole_diameter": 15.0,
-    "bolt_circle_percentage": 0.6
+    "hole_diameter": 5.5,
+    "center_hole_diameter": 12.0,
+    "bolt_circle_percentage": 0.65,
+    "chamfer_size": 1.0,
+    "fillet_size": 0.0
+  },
+  "medium_8hole": {
+    "flange_diameter": 75.0,
+    "flange_thickness": 8.0,
+    "hole_count": 8,
+    "hole_diameter": 5.5,
+    "center_hole_diameter": 12.0,
+    "bolt_circle_percentage": 0.7,
+    "chamfer_size": 2.0,
+    "fillet_size": 0.0
+  },
+  "large_12hole": {
+    "flange_diameter": 100.0,
+    "flange_thickness": 12.0,
+    "hole_count": 12,
+    "hole_diameter": 5.5,
+    "center_hole_diameter": 25.0,
+    "bolt_circle_percentage": 0.65,
+    "chamfer_size": 1.5,
+    "fillet_size": 0.0
+  }
 }
